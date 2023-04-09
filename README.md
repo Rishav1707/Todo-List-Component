@@ -13,7 +13,7 @@ Overall, a Todo List app is a valuable tool for anyone looking to stay organized
 Clone the project
 
 ```bash
-  git clone https://github.com/Your Username/Todo-List-Component
+  git clone https://github.com/Your Username/Todo-List-Component.git
 ```
 
 Go to the project directory
