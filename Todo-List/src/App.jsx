@@ -42,13 +42,16 @@ export default function TaskApp() {
 
   return (
     <>
-      <h1>Todo List</h1>
+      <h1>Todo List📋</h1>
       <AddTodo onAddTodo={handleAddTodo} />
       <TaskList
         todos={todos}
         onChangeTodo={handleChangeTodo}
         onDeleteTodo={handleDeleteTodo}
       />
+      <h1 className="quote">
+        "Don't wait for opportunities, create them." - Roy T. Bennett
+      </h1>
     </>
   );
 }
