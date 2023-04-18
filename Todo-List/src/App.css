@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Tilt+Prism&display=swap');
 
 :root {
   --primary-color: #FF7F50;
@@ -22,8 +23,12 @@ body {
 }
 
 h1 {
-  font-size: 3em;
-  font-family: 'Poppins', sans-serif;
+  font-size: 5em;
+  font-family: 'Caveat', cursive;
+}
+
+.quote {
+  font-size: 2.5em;
 }
 
 input {
@@ -62,4 +67,48 @@ button {
 button:hover,
 button:focus {
   border-color: var(--border-color);
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  .quote {
+    margin-top: 2em;
+    font-size: 1.5em;
+  }
+
+  input {
+    padding: 0.6rem;
+  }
+
+  button {
+    /* font-size: 0.7em; */
+    padding: 0.4em 0.8em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  button {
+    font-size: 0.7em;
+    padding: 0.5em 0.8em;
+  }
+
+  .list {
+    text-align: start;
+    margin-left: 3.1em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .list {
+    margin-left: 1.4em;
+  }
 }
