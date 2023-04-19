@@ -6,7 +6,7 @@ import "./App.css";
 let nextId = 3;
 const initialTodos = [
   { id: 0, title: "DSA Questions", done: true },
-  { id: 1, title: "Open Source Contribution", done: true },
+  { id: 1, title: "Open Source", done: true },
   { id: 2, title: "React Documentation", done: true },
 ];
 

@@ -33,7 +33,7 @@ function Task({ todo, onChange, onDelete }) {
   } else {
     todoContent = (
       <>
-        {todo.title}
+        <span className={todo.done ? "completed" : ""}>{todo.title}</span>
         <button onClick={() => setIsEditing(true)}>Edit</button>
       </>
     );
