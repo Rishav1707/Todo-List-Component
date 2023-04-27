@@ -1,6 +1,7 @@
 import { useState } from "react";
 import AddTodo from "./AddTodo.jsx";
 import TaskList from "./TaskList.jsx";
+import Theme from "./Theme.jsx";
 import "./App.css";
 
 let nextId = 3;
@@ -12,6 +13,12 @@ const initialTodos = [
 
 export default function TaskApp() {
   const [todos, setTodos] = useState(initialTodos);
+  const [theme, setTheme] = useState("light");
+
+  function toggleTheme() {
+    document.body.classList.toggle("dark-theme-variables");
+    setTheme(theme === "light" ? "dark" : "light");
+  }
 
   function handleAddTodo(title) {
     setTodos([
@@ -42,6 +49,7 @@ export default function TaskApp() {
 
   return (
     <>
+      <Theme toggleTheme={toggleTheme} theme={theme} />
       <h1>Todo List📋</h1>
       <AddTodo onAddTodo={handleAddTodo} />
       <TaskList

@@ -5,6 +5,13 @@
   --primary-color: #FF7F50;
   --secondary-color: #4B0082;
   --border-color: #d2643d;
+  --background-color: #E6E6FA;
+  --font-color: #000;
+}
+
+.dark-theme-variables {
+  --background-color: #23272f;
+  --font-color: #fff;
 }
 
 #root {
@@ -19,7 +26,19 @@ body {
   display: flex;
   place-items: center;
   min-height: 100vh;
-  background-color: #E6E6FA;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+.mainTheme {
+  display: flex;
+  justify-content: end;
+}
+
+.theme {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 h1 {
