@@ -6,7 +6,7 @@ Overall, a Todo List app is a valuable tool for anyone looking to stay organized
 
 <br>
 
-![image](https://user-images.githubusercontent.com/97666287/233055316-75ae03ac-25a5-402d-a2e0-d4e8d960edc2.png)
+![image](https://user-images.githubusercontent.com/97666287/234872576-35baf0d5-29f0-4b4e-b94e-2afd0e574333.png)
 
 ## Run Locally
 
