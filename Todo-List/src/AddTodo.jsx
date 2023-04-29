@@ -10,6 +10,7 @@ export default function AddTodo({ onAddTodo }) {
         onChange={(e) => setTitle(e.target.value)}
       />
       <button
+        disabled={!title}
         onClick={() => {
           setTitle("");
           onAddTodo(title);
